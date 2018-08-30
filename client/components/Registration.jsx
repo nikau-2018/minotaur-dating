@@ -3,6 +3,7 @@ import React, { Component } from 'react'
 import SignIn from './SignIn'
 import SignUp from './SignUp'
 import RegistrationButtons from './RegistrationButtons'
+import Main from './Main'
 
 class Registration extends Component {
   constructor (props) {
@@ -14,6 +15,11 @@ class Registration extends Component {
   }
 goTo(location) {
   this.setState({ location })
+}
+display(location) {
+  switch(location) {
+    case '':
+  }
 }
   }
 }
