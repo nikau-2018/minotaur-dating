@@ -14,7 +14,7 @@ const App = props => {
     <Router>
       <div>
         <Route path= "/" component={Nav} />
-        <Route path="/" component= {Main} />        
+        <Route path="/" component= {Main} />
         <Route path="/others" component= {Others} />
         {/* <Route path='/' component={Registration} />
         <Route path='/' component={RegistrationButton} />
