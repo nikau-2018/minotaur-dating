@@ -2,7 +2,7 @@ import React from 'react'
 
 const SignIn = (props) => {
   return (
-    <div>
+    <div className='sign'>
       <form>
         <label>
           Name
@@ -12,9 +12,9 @@ const SignIn = (props) => {
           Password
           <input type="test" name="password" />
         </label>
-        <button
+        <button className='homebutton'
           type="button"
-          onClick={() => props.goTo('Registration')}>
+          onClick={() => props.goTo('main')}>
           Home
         </button>
       </form>
