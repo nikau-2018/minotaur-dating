@@ -4,7 +4,7 @@ import { HashRouter as Router, Route } from 'react-router-dom'
 import Nav from './Nav'
 import Others from './Others'
 import Main from './Main'
-import Registration from './Registrtion'
+import Registration from './Registration'
 
 /* import Registration from './Registration'
 import RegistrationButton from './RegistrationButton'
