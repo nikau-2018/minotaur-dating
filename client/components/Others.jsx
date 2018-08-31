@@ -15,16 +15,20 @@ class Others extends React.Component {
       .then(users => {
         this.setState({users})
       })
-    
   }
 
   render () {
     // console.log('this.state.user', this.state.user.name)
     return (
-      <div className='others'>
-        <h1>Testing Others API</h1>
+      <div>
+        <h2>Find Minotaurs</h2>
         {this.state.users.map(users => (
-          <div key={users.id}>{users.name}</div>
+          <div key={users.id} className='others'>
+            <span className='username'>{users.name}</span>
+            <span className='useremail'> ({users.email})</span><br />
+            <span className='userage'>Age: </span><span>{users.age}</span><br />
+            <span className='userbio'>Bio: </span><span>{users.bio}</span>
+          </div>
         ))}
       </div>
     )
