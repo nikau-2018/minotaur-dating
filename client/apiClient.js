@@ -10,10 +10,10 @@ export function getAllUsers () {
     })
 }
 
-export function getUser () {
-  return request.get(rootUrl + '/getUser/99902')
-    .then(res => {
-      console.log('res.body.user', res.body.user)
-      return res.body.user
-    })
-}
+// export function getUser () {
+//   return request.get(rootUrl + '/getUser/99902')
+//     .then(res => {
+//       console.log('res.body.user', res.body.user)
+//       return res.body.user
+//     })
+// }
