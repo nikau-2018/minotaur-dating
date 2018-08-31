@@ -15,7 +15,6 @@ class Others extends React.Component {
       .then(users => {
         this.setState({users})
       })
-    
   }
 
   render () {
@@ -24,7 +23,7 @@ class Others extends React.Component {
       <div className='others'>
         <h1>Testing Others API</h1>
         {this.state.users.map(users => (
-          <div key={users.id}>{users.name}</div>
+          <div key={users.id}>{users.name}{users.bio}</div>
         ))}
       </div>
     )
