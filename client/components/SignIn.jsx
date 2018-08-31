@@ -14,7 +14,7 @@ const SignIn = (props) => {
         </label>
         <button className='homebutton'
           type="button"
-          onClick={() => props.goTo('Registration')}>
+          onClick={() => props.goTo('main')}>
           Home
         </button>
       </form>

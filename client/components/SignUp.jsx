@@ -24,8 +24,10 @@ const SignUp = (props) => {
           Bio
           <input type = "text" name="bio" />
         </label>
-        <button type="submit" onClick = {evt => props.submitFunc}>
-          Submit
+        <button className='button'
+          type="button"
+          onClick={() => props.goTo('main')}>
+        Sign Up
         </button>
       </form>
     </div>

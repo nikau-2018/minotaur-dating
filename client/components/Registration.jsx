@@ -35,24 +35,24 @@ class Registration extends React.Component {
     this.setState({location})
   }
 
-  display (location) {
-    switch (location) {
+  display () {
+    switch (this.state.location) {
       case '':
       default:
         return <RegistrationButtons goTo={this.goTo} />
       case 'signUp':
-        return <SignUp submitFunc={this.handleSubmit} />
+        return <SignUp goTo={this.goTo} submitFunc={this.handleSubmit} />
       case 'signIn':
         return <SignIn goTo={this.goTo} />
       case 'main':
-        return <Main />
+        return <Main goTo={this.goTo}/>
     }
   }
 
   render () {
     return (
       <div>
-        {this.display(this.state.location)}
+        {this.display()}
       </div>
     )
   }
