@@ -9,10 +9,23 @@ class Registration extends Component {
   constructor (props) {
     super(props)
     this.state = {
-      location: ''
+      location: '',
+      signUpForm: {
+        name: '',
+        email: '',
+        password: '',
+        age: '',
+        bio: ''
+      }
     }
+
     this.goTo = this.goTo.bind(this) // bind main class 'this' to the method
   }
+
+  // updateText() {
+  //   this
+  // }
+
   goTo (location) {
     this.setState({location})
   }
