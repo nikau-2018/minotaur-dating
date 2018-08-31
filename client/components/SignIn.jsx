@@ -6,19 +6,16 @@ const SignIn = (props) => {
       <form>
         <label>
           Name
-          <input type = "test" name="name" />
+          <input type="test" name="name" />
         </label>
         <label>
-          Email
-          <input type = "test" name="email" />
-        </label>
-        <label>
-          Age
-          <input type = "test" name="age" />
+          Password
+          <input type="test" name="password" />
         </label>
         <button
-          type= "button"
-          onClick = {() => props.goTo('Registration')
+          type="button"
+          onClick={() => props.goTo('Registration')}>
+          Home
         </button>
       </form>
     </div>

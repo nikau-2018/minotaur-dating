@@ -4,17 +4,17 @@ const RegistrationButtons = (props) => {
   return (
     <div>
       <button
-      type = "button"
-      onClick = {() = > props.goTo('signIn')}>
-      Sign In
+        type="button"
+        onClick={() => props.goTo('signIn')}>
+        Sign In
       </button>
       <button
-      type = "button"
-      onClick = {() = > props.goTo('signUp')}>
-      Sign Up
+        type="button"
+        onClick={() => props.goTo('signUp')}>
+        Sign Up
       </button>
     </div>
-    
+
   )
 }
 
