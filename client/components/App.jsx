@@ -1,5 +1,5 @@
 import React from 'react'
-import { HashRouter as Router, Route } from 'react-router-dom'
+import {HashRouter as Router, Route} from 'react-router-dom'
 
 import Nav from './Nav'
 import Others from './Others'
@@ -13,7 +13,12 @@ import SignUp from './SignUp' */
 
 const App = props => {
   return (
-    <div>  <Registration/> </div>
+    <div>
+      <h1>Minotaur Dating</h1>
+      <img src= './images/girl.png' />
+      <div className = 'container'><Registration /></div>
+      
+    </div>
     //   <Router>
     //   <div>
     //     <Route path= "/" component={Nav} />
