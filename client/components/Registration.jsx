@@ -3,7 +3,7 @@ import React from 'react'
 import SignIn from './SignIn'
 import SignUp from './SignUp'
 import RegistrationButtons from './RegistrationButtons'
-import Main from './Main'
+import Others from './Others'
 
 const defaultState = {
   location: '',
@@ -45,7 +45,7 @@ class Registration extends React.Component {
       case 'signIn':
         return <SignIn goTo={this.goTo} />
       case 'main':
-        return <Main goTo={this.goTo}/>
+        return <Others goTo={this.goTo}/>
     }
   }
 

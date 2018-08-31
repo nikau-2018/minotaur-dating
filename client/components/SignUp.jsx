@@ -14,7 +14,7 @@ const SignUp = (props) => {
         </label>
         <label>
           Password
-          <input type = "text" name="password" />
+          <input type = "password" name="password" />
         </label>
         <label>
           Age
