@@ -13,7 +13,8 @@ import SignUp from './SignUp' */
 
 const App = props => {
   return (
-    <div>  <Registration/> </div>
+    <div>  <Registration/>
+      <Others /> </div>
     //   <Router>
     //   <div>
     //     <Route path= "/" component={Nav} />
