@@ -3,7 +3,7 @@ import React from 'react'
 const SignUp = (props) => {
   return (
     <div>
-      <form>
+      <form method="post" action="http://192.168.1.156:3000/api/register">
         <label>
           Name
           <input type = "text" name="name"/>
@@ -14,7 +14,7 @@ const SignUp = (props) => {
         </label>
         <label>
           Password
-          <input type = "text" name="password" />
+          <input type = "password" name="password" />
         </label>
         <label>
           Age
@@ -24,11 +24,7 @@ const SignUp = (props) => {
           Bio
           <input type = "text" name="bio" />
         </label>
-        <button className='button'
-          type="button"
-          onClick={() => props.goTo('main')}>
-        Sign Up
-        </button>
+        <button>Register</button>
       </form>
     </div>
   )
