@@ -17,13 +17,15 @@ const App = props => {
       <h1>Minotaur Dating</h1>
       <img src= './images/girl.png' />
       <div className = 'container'><Registration /></div>
-      
+      <Router>
+        <Route path="/others" component= {Others} />
+      </Router>
     </div>
     //   <Router>
     //   <div>
     //     <Route path= "/" component={Nav} />
     //     <Route path="/" component= {Main} />
-    //     <Route path="/others" component= {Others} />
+
     //     {/* <Route path='/' component={Registration} />
     //     <Route path='/' component={RegistrationButton} />
     //     <Route path='/' component={SignIn} />
