@@ -17,11 +17,12 @@ const App = props => {
       <h1>Minotaur Dating</h1>
       <img src= './images/girl.png' />
       <div className = 'container'><Registration /></div>
-      <Router>
+      <div><Router>
         <Route path="/others" component= {Others} />
       </Router>
+      </div>
     </div>
-    //   <Router>
+  /* //   <Router>
     //   <div>
     //     <Route path= "/" component={Nav} />
     //     <Route path="/" component= {Main} />
@@ -29,9 +30,9 @@ const App = props => {
     //     {/* <Route path='/' component={Registration} />
     //     <Route path='/' component={RegistrationButton} />
     //     <Route path='/' component={SignIn} />
-    //     <Route path='/' component={SignUp} /> */}
+    //     <Route path='/' component={SignUp} /> */
     //   </div>
-    // </Router>
+    // </Router> */}
   )
 }
 
