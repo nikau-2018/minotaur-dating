@@ -1,5 +1,5 @@
 import React from 'react'
-import {getUser} from '../apiClient'
+import {getUser/* , getAllUsers */} from '../apiClient'
 
 class Others extends React.Component {
   constructor (props) {
@@ -7,6 +7,9 @@ class Others extends React.Component {
     this.state = {
       user: []
     }
+/*     this.state = {
+      users: []
+    } */
   }
 
   componentDidMount () {
@@ -14,6 +17,10 @@ class Others extends React.Component {
       .then(user => {
         this.setState({user})
       })
+/*     getAllUsers()
+    .then(user => {
+      this.setState({users})
+    }) */
   }
 
   render () {
@@ -21,8 +28,9 @@ class Others extends React.Component {
     return (
       <div className='others'>
         <h1>Testing Others API</h1>
-        <div> {this.state.user.name}
-          {/*           {this.state.users.map(user => (
+        {/* Individual user */}
+        <div> {this.state.user.name}</div>
+          {/* All users          {this.state.users.map(user => (
             <div key={user.id}>{user.name}</div>
           ))} */}
         </div>

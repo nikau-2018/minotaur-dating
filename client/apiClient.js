@@ -17,3 +17,12 @@ export function getUser () {
       return res.body.user
     })
 }
+
+export function addUser (user) {
+  return request
+    .post(rootUrl + '/addUser',  )
+    .then(res => {
+      console.log('res.body.user', res.body.user)
+      return res.body.user
+    })
+}
