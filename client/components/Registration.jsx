@@ -29,7 +29,7 @@ class Registration extends Component {
         return <Main />
     }
   }
-  redner () {
+  render () {
     return (
       <div>
         {this.display(this.state.location)}
