@@ -3,12 +3,12 @@ import React from 'react'
 const RegistrationButtons = (props) => {
   return (
     <div>
-      <button
+      <button className='button'
         type="button"
         onClick={() => props.goTo('signIn')}>
         Sign In
       </button>
-      <button
+      <button className='button'
         type="button"
         onClick={() => props.goTo('signUp')}>
         Sign Up
@@ -19,4 +19,3 @@ const RegistrationButtons = (props) => {
 }
 
 export default RegistrationButtons
-

@@ -1,7 +1,51 @@
-body {
-  height: 100%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+h1 {
   font-family: 'Open Sans', sans-serif;
+  padding-top: 150px;
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.container {
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.button {
+  /* border:2px solid red !important; */
+  margin: auto;
+  width: 260px;
+  height: 80px;
+  font-size: 20px;
+  
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 550px;
+  height: 450px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+
+label {
+  width:180px;
+  margin: auto;
+}
+
+input {
+  width:180px;
+  margin: auto;
+  background-color: rgb(194, 194, 194);
+  border: 0px white;
+}
+
+.homebutton {
+  margin-top: 50px;
+  width: 150px;
+  height: 50px;
+  font-size: 15px;
 }
