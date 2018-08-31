@@ -3,7 +3,7 @@ import React from 'react'
 const SignUp = (props) => {
   return (
     <div>
-      <form method="post" action="http://192.168.1.156:3000/api/register">
+      <form method="post" action="http://localhost:3000/api/register">
         <label>
           Name
           <input type = "text" name="name"/>
