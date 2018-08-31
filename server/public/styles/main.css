@@ -26,7 +26,7 @@ h2 {
   font-size: 20px;
 }
 
-img {
+.mainImage {
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -60,12 +60,12 @@ input {
   font-size: 20px;
 }
 
-.userage, .userbio {
+.userage, .userbio, .useremail {
   font-weight: bold;
 }
 
-.useremail {
-  font-style: italic;
+.useremailadd {
+  text-decoration: underline;
 }
 
 .others {
@@ -73,4 +73,15 @@ input {
   margin: 15px;
   padding: 15px;
   border-radius: 5px;
+}
+
+.userphoto {
+width: 200px;
+height: 200px;
+margin-left: auto;
+margin-right: auto;
+display: block;
+padding-top: 20px;
+padding-bottom: 20px;
+
 }

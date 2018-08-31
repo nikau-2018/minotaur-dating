@@ -24,8 +24,9 @@ class Others extends React.Component {
         <h2>Find Minotaurs</h2>
         {this.state.users.map(users => (
           <div key={users.id} className='others'>
-            <span className='username'>{users.name}</span>
-            <span className='useremail'> ({users.email})</span><br />
+            <img className='userphoto' src={users.photo} />
+            <span className='username'>{users.name}</span><br />
+            <span className='useremail'>Email: </span><span className='useremailadd'>{users.email}</span><br />
             <span className='userage'>Age: </span><span>{users.age}</span><br />
             <span className='userbio'>Bio: </span><span>{users.bio}</span>
           </div>

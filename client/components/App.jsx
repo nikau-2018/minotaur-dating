@@ -15,7 +15,7 @@ const App = props => {
   return (
     <div>
       <h1>Minotaur Dating</h1>
-      <img src= './images/girl.png' />
+      <img className='mainImage' src= './images/girl.png' />
       <div className = 'container'><Registration /></div>
       <div><Router>
         <Route path="/others" component= {Others} />
