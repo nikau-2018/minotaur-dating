@@ -18,11 +18,17 @@ export function getUser () {
     })
 }
 
-export function addUser (user) {
+export function addUser (userData) {
+  const testData = {
+    name: 'TestName',
+    email: 'TestEmail',
+    password: 'TestPassword',
+    age: 'TestAge',
+    bio: 'TestBio'
+  }
   return request
-    .post(rootUrl + '/addUser',  )
-    .then(res => {
-      console.log('res.body.user', res.body.user)
-      return res.body.user
-    })
+    .post(rootUrl + '/addUser')
+    .set('Content-Type', 'application/json')
+    // .send(userData)
+    .send(testData)
 }
