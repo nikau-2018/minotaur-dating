@@ -6,28 +6,26 @@ const SignUp = (props) => {
       <form>
         <label>
           Name
-          <input type = "test" name="name" />
+          <input type = "text" name="name"/>
         </label>
         <label>
           Email
-          <input type = "test" name="email" />
+          <input type = "text" name="email" />
         </label>
         <label>
           Password
-          <input type = "test" name="password" />
+          <input type = "text" name="password" />
         </label>
         <label>
           Age
-          <input type = "test" name="age" />
+          <input type = "text" name="age" />
         </label>
         <label>
           Bio
-          <input type = "test" name="bio" />
+          <input type = "text" name="bio" />
         </label>
-        <button
-          type= "button"
-          onClick = {() => props.goTo('Registration')}>
-          Home
+        <button type="submit" onClick = {evt => props.submitFunc}>
+          Submit
         </button>
       </form>
     </div>
