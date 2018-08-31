@@ -1,5 +1,5 @@
 import React from 'react'
-import {getAllUsers} from '../apiClient'
+import {getAllUsers, addUser} from '../apiClient'
 
 class Others extends React.Component {
   constructor (props) {
@@ -10,10 +10,12 @@ class Others extends React.Component {
   }
 
   componentDidMount () {
+    // addUser(null)
     getAllUsers()
       .then(users => {
         this.setState({users})
       })
+    
   }
 
   render () {
