@@ -10,8 +10,9 @@ export function getAllUsers () {
     })
 }
 
-export function getUser () {
-  return request.get(rootUrl + '/getUser/99902')
+export function getUser (id) {
+  const reqStr = `getUser${id}`
+  return request.get(rootUrl + reqStr)
     .then(res => {
       console.log('res.body.user', res.body.user)
       return res.body.user
@@ -20,15 +21,16 @@ export function getUser () {
 
 export function addUser (userData) {
   const testData = {
-    name: 'TestName',
+    name: 'TestName2',
     email: 'TestEmail',
     password: 'TestPassword',
     age: 'TestAge',
     bio: 'TestBio'
   }
-  return request
+  request
     .post(rootUrl + '/addUser')
     .set('Content-Type', 'application/json')
-    // .send(userData)
-    .send(testData)
+    .send(userData)
+    // .send(testData)
+    .end()
 }
