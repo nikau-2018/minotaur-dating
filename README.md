@@ -11,4 +11,5 @@ Clone this repo and Once the API service is running, follow the below:
 ```sh
 yarn
 yarn start
+Visit http://localhost:4000
 ```
