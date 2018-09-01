@@ -8,6 +8,9 @@ import Others from './Others'
 class Registration extends React.Component {
   constructor (props) {
     super(props)
+    this.state = {
+      location: ''
+    }
     this.goTo = this.goTo.bind(this) // bind main class 'this' to the method
   }
 
