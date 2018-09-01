@@ -10,7 +10,7 @@ export function getAllUsers () {
 }
 
 export function getUser (id) {
-  const reqStr = `getUser${id}`
+  const reqStr = `getUser/${id}`
   return request.get(rootUrl + reqStr)
     .then(res => {
       return res.body.user

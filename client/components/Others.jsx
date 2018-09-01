@@ -10,7 +10,6 @@ class Others extends React.Component {
   }
 
   componentDidMount () {
-    // addUser(null)
     getAllUsers()
       .then(users => {
         this.setState({users})
@@ -18,7 +17,6 @@ class Others extends React.Component {
   }
 
   render () {
-    // console.log('this.state.user', this.state.user.name)
     return (
       <div>
         <h2>Find Minotaurs</h2>

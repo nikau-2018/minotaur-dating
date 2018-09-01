@@ -5,30 +5,10 @@ import SignUp from './SignUp'
 import RegistrationButtons from './RegistrationButtons'
 import Others from './Others'
 
-const defaultState = {
-  location: '',
-  signUpForm: {
-    name: '',
-    email: '',
-    password: '',
-    age: '',
-    bio: ''
-  }
-}
-
 class Registration extends React.Component {
   constructor (props) {
     super(props)
-    this.state = defaultState
     this.goTo = this.goTo.bind(this) // bind main class 'this' to the method
-  }
-
-  handleSubmit (evt) {
-    console.log(evt)
-    // this.props.saveItem(this.state)
-    // this.setState({...defaultState})
-    // evt.preventDefault()
-    // props.goTo('Registration')
   }
 
   goTo (location) {
