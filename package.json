@@ -1,11 +1,11 @@
 {
-  "name": "boilerplate-react-webpack",
+  "name": "minotaur-dating",
   "version": "0.2.1",
-  "description": "A webpack React starter",
-  "repository": "https://github.com/dev-academy-challenges/boilerplate-react-webpack.git",
+  "description": "A dating app for minotaurs",
+  "repository": "https://github.com/nikau-2018/minotaur-dating",
   "main": "server/index.js",
-  "author": "EDA",
-  "license": "ISC",
+  "author": "Team Minotaur",
+  "license": "MIT",
   "scripts": {
     "start": "webpack && node server",
     "dev": "node server & webpack --watch",
